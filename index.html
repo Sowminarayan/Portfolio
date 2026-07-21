@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sowminarayan | Portfolio</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#070B18] text-white overflow-x-hidden">
+
+<nav id="navbar" class="fixed top-0 w-full z-50 nav-blur">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#hero" class="font-[Poppins] font-bold text-lg">Sowmi<span class="grad-text">.dev</span></a>
+    <div class="hidden md:flex items-center gap-8 text-sm text-gray-300">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#certificates" class="nav-link">Certificates</a>
+      <a href="#achievements" class="nav-link">Achievements</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <a href="#contact" class="hidden md:inline-block px-5 py-2 rounded-full text-sm font-medium btn-grad">Hire Me</a>
+    <button id="navToggle" class="md:hidden text-xl"><i class="fa-solid fa-bars"></i></button>
+  </div>
+  <div id="mobileMenu" class="md:hidden hidden flex-col gap-1 px-6 pb-5 text-gray-300 text-sm">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#certificates" class="mobile-link">Certificates</a>
+    <a href="#achievements" class="mobile-link">Achievements</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+</nav>
+
+<section id="hero" class="relative min-h-screen flex items-center px-6 pt-24">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center relative z-10">
+    <div data-aos="fade-up">
+      <p class="font-[Fira_Code] text-sm text-[#7C5CFC] mb-4">// second-year student &amp; developer</p>
+      <h1 class="font-[Poppins] font-bold text-4xl md:text-5xl leading-tight mb-4">Hi, I'm <span class="grad-text">Sowminarayan</span></h1>
+      <h2 class="text-xl md:text-2xl text-gray-300 mb-6 h-8"><span id="typed"></span></h2>
+      <p class="text-gray-400 max-w-md mb-8">I build clean, responsive web experiences and enjoy turning ideas into working products — currently exploring web development, data, and AI.</p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#projects" class="px-6 py-3 rounded-full font-medium btn-grad">View Projects</a>
+        <a href="#contact" class="px-6 py-3 rounded-full font-medium border border-white/15 hover:border-white/40 transition">Contact Me</a>
+      </div>
+      <div class="flex gap-5 mt-8 text-gray-400 text-lg">
+        <a href="#" class="hover:text-[#7C5CFC] transition"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="hover:text-[#7C5CFC] transition"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" class="hover:text-[#7C5CFC] transition"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="flex justify-center" data-aos="fade-left" data-aos-delay="150">
+      <div class="hero-photo-ring">
+        <div class="hero-photo"><img src="images/profile.jpeg" alt="Sowminarayan"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section-pad px-6">
+  <div class="max-w-6xl mx-auto">
+    <p class="eyebrow" data-aos="fade-up">01 · About Me</p>
+    <h2 class="section-title" data-aos="fade-up">A little about who I am</h2>
+    <div class="grid md:grid-cols-3 gap-10 mt-10">
+      <div class="md:col-span-2 text-gray-400 space-y-4" data-aos="fade-up" data-aos-delay="100">
+        <p>I'm a second-year student passionate about building things for the web. I like working across the stack — from styling a clean interface to wiring up the logic that makes it useful.</p>
+        <p>Outside of coursework, I spend time on personal projects, learning new tools, and figuring out how design and functionality can work together instead of against each other.</p>
+      </div>
+      <div class="space-y-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="stat-card"><p class="stat-num">3+</p><p class="stat-label">Projects Built</p></div>
+        <div class="stat-card"><p class="stat-num">3</p><p class="stat-label">Certifications</p></div>
+        <div class="stat-card"><p class="stat-num">1</p><p class="stat-label">Internship</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section-pad px-6 bg-white/[0.02]">
+  <div class="max-w-6xl mx-auto">
+    <p class="eyebrow" data-aos="fade-up">02 · Skills</p>
+    <h2 class="section-title" data-aos="fade-up">What I work with</h2>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
+      <div class="skill-card" data-aos="fade-up">
+        <i class="fa-brands fa-html5 text-3xl mb-3 text-[#7C5CFC]"></i>
+        <h3 class="font-medium mb-1">HTML &amp; CSS</h3>
+        <p class="text-sm text-gray-400">Semantic markup, responsive layouts</p>
+      </div>
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="50">
+        <i class="fa-brands fa-js text-3xl mb-3 text-[#7C5CFC]"></i>
+        <h3 class="font-medium mb-1">JavaScript</h3>
+        <p class="text-sm text-gray-400">DOM, interactivity, fetch/APIs</p>
+      </div>
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+        <i class="fa-brands fa-git-alt text-3xl mb-3 text-[#7C5CFC]"></i>
+        <h3 class="font-medium mb-1">Git &amp; GitHub</h3>
+        <p class="text-sm text-gray-400">Version control, GitHub Pages</p>
+      </div>
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="150">
+        <i class="fa-solid fa-wind text-3xl mb-3 text-[#7C5CFC]"></i>
+        <h3 class="font-medium mb-1">Tailwind CSS</h3>
+        <p class="text-sm text-gray-400">Utility-first styling</p>
+      </div>
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+        <i class="fa-solid fa-database text-3xl mb-3 text-[#7C5CFC]"></i>
+        <h3 class="font-medium mb-1">SQL</h3>
+        <p class="text-sm text-gray-400">Queries, joins, data cleanup</p>
+      </div>
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="250">
+        <i class="fa-solid fa-robot text-3xl mb-3 text-[#7C5CFC]"></i>
+        <h3 class="font-medium mb-1">AI Tools</h3>
+        <p class="text-sm text-gray-400">Prompt design, applied AI basics</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section-pad px-6">
+  <div class="max-w-6xl mx-auto">
+    <p class="eyebrow" data-aos="fade-up">03 · Projects</p>
+    <h2 class="section-title" data-aos="fade-up">Things I've built</h2>
+    <div class="grid md:grid-cols-3 gap-6 mt-10">
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-thumb"><i class="fa-solid fa-route text-3xl text-gray-500"></i></div>
+        <h3 class="font-medium mt-4 mb-2">CareerForge AI</h3>
+        <p class="text-sm text-gray-400 mb-4">Evaluates students' technical and communication skills to recommend personalized tech career paths. Built with Python, FastAPI, and SQLite, with progress tracking and PDF career reports.</p>
+        <div class="flex gap-4 text-sm">
+          <a href="#" class="proj-link"><i class="fa-brands fa-github"></i> Code</a>
+          <a href="#" class="proj-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+        </div>
+      </div>
+      <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-thumb"><i class="fa-solid fa-newspaper text-3xl text-gray-500"></i></div>
+        <h3 class="font-medium mt-4 mb-2">Fake News Detection</h3>
+        <p class="text-sm text-gray-400 mb-4">A Fake News Detection system using NLP and Machine Learning to classify news articles as real or fake, covering text preprocessing, feature extraction, model training, and evaluation.</p>
+        <div class="flex gap-4 text-sm">
+          <a href="#" class="proj-link"><i class="fa-brands fa-github"></i> Code</a>
+          <a href="#" class="proj-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+        </div>
+      </div>
+      <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-thumb"><i class="fa-solid fa-chart-line text-3xl text-gray-500"></i></div>
+        <h3 class="font-medium mt-4 mb-2">E-Commerce Sales Analytics</h3>
+        <p class="text-sm text-gray-400 mb-4">An end-to-end analytics project using SQL, Python, and Power BI to analyze sales, profit, and regional performance, with EDA and interactive dashboards for business insights.</p>
+        <div class="flex gap-4 text-sm">
+          <a href="#" class="proj-link"><i class="fa-brands fa-github"></i> Code</a>
+          <a href="#" class="proj-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="certificates" class="section-pad px-6 bg-white/[0.02]">
+  <div class="max-w-6xl mx-auto">
+    <p class="eyebrow" data-aos="fade-up">04 · Certificates</p>
+    <h2 class="section-title" data-aos="fade-up">Certifications</h2>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
+      <a href="images/certificate-1.jpeg" target="_blank" class="cert-card" data-aos="fade-up">
+        <img src="images/certificate-1.jpeg" alt="HACKWELL 2K26 Certificate of Qualification" class="cert-thumb">
+        <h3 class="font-medium mb-1">HACKWELL 2K26 – Qualification</h3>
+        <p class="text-sm text-gray-400">Saranathan College of Engineering, in association with Microsoft · 2026</p>
+      </a>
+      <a href="images/certificate-2.jpeg" target="_blank" class="cert-card" data-aos="fade-up" data-aos-delay="100">
+        <img src="images/certificate-2.jpeg" alt="Foundational Course on Applied Machine Learning and AI" class="cert-thumb">
+        <h3 class="font-medium mb-1">Applied Machine Learning &amp; AI</h3>
+        <p class="text-sm text-gray-400">Confederation of Indian Industry (CII) · Jul 2026</p>
+      </a>
+      <a href="images/certificate-3.jpeg" target="_blank" class="cert-card" data-aos="fade-up" data-aos-delay="200">
+        <img src="images/certificate-3.jpeg" alt="Certificate of Appreciation, UDHAYAM'26 Paper Presentation" class="cert-thumb">
+        <h3 class="font-medium mb-1">Paper Presentation – UDHAYAM'26</h3>
+        <p class="text-sm text-gray-400">KIT – Kalaignarkarunanidhi Institute of Technology · Feb 2026</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="achievements" class="section-pad px-6">
+  <div class="max-w-6xl mx-auto">
+    <p class="eyebrow" data-aos="fade-up">05 · Achievements</p>
+    <h2 class="section-title" data-aos="fade-up">Milestones</h2>
+    <div class="mt-10 space-y-4 max-w-2xl">
+      <div class="achieve-row" data-aos="fade-up">
+        <i class="fa-solid fa-graduation-cap text-[#7C5CFC]"></i>
+        <p>Qualified for the final round of HACKWELL 2K26, an AI &amp; Data Science hackathon by Saranathan College of Engineering, in association with Microsoft</p>
+        <span class="text-sm text-gray-500">2026</span>
+      </div>
+      <div class="achieve-row" data-aos="fade-up" data-aos-delay="80">
+        <i class="fa-solid fa-graduation-cap text-[#7C5CFC]"></i>
+        <p>Received a Certificate of Appreciation for paper presentation at UDHAYAM'26, an intercollegiate technical &amp; cultural fest</p>
+        <span class="text-sm text-gray-500">2026</span>
+      </div>
+      <div class="achieve-row" data-aos="fade-up" data-aos-delay="160">
+        <i class="fa-solid fa-music text-[#7C5CFC]"></i>
+        <p>Competitive dancer — won prizes across multiple inter-college and cultural dance competitions</p>
+        <span class="text-sm text-gray-500">2024–2026</span>
+      </div>
+      <div class="achieve-row" data-aos="fade-up" data-aos-delay="240">
+        <i class="fa-solid fa-film text-[#7C5CFC]"></i>
+        <p>Actor in a short film that won prizes at film competitions</p>
+        <span class="text-sm text-gray-500">2025</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section-pad px-6 bg-white/[0.02]">
+  <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+    <p class="eyebrow justify-center">06 · Contact</p>
+    <h2 class="section-title">Let's work together</h2>
+    <p class="text-gray-400 max-w-md mx-auto mt-4 mb-10">Open to internships, freelance work, and collaboration. Reach out however's easiest for you.</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="mailto:sowminarayan@example.com" class="contact-btn"><i class="fa-solid fa-envelope"></i> sowminarayan@example.com</a>
+      <a href="https://github.com/yourusername" target="_blank" class="contact-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank" class="contact-btn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer class="px-6 py-8 text-center text-gray-500 text-sm border-t border-white/10">
+  © 2026 Sowminarayan. Built with Tailwind CSS &amp; deployed on GitHub Pages.
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

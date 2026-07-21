@@ -1,0 +1,274 @@
+/* ---------- Base ---------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+::selection {
+  background: #7C5CFC;
+  color: #fff;
+}
+
+/* ---------- Nav ---------- */
+.nav-blur {
+  background: rgba(7, 11, 24, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  transition: background 0.3s ease;
+}
+
+.nav-link {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1px;
+  background: #7C5CFC;
+  transition: width 0.25s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.mobile-link {
+  display: block;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ---------- Gradient text / buttons ---------- */
+.grad-text {
+  background: linear-gradient(90deg, #7C5CFC, #C084FC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.btn-grad {
+  background: linear-gradient(90deg, #7C5CFC, #C084FC);
+  color: #fff;
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.btn-grad:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+/* ---------- Hero blobs ---------- */
+.blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  opacity: 0.35;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.blob-1 {
+  width: 380px;
+  height: 380px;
+  background: #7C5CFC;
+  top: -80px;
+  left: -100px;
+}
+
+.blob-2 {
+  width: 320px;
+  height: 320px;
+  background: #C084FC;
+  bottom: -60px;
+  right: -80px;
+}
+
+/* ---------- Hero photo ---------- */
+.hero-photo-ring {
+  width: 280px;
+  height: 280px;
+  border-radius: 9999px;
+  padding: 6px;
+  background: linear-gradient(135deg, #7C5CFC, #C084FC);
+}
+
+.hero-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 9999px;
+  background: #0F1428;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 9999px;
+}
+
+/* ---------- Section layout ---------- */
+.section-pad {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.8rem;
+  color: #7C5CFC;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* ---------- Cards (shared) ---------- */
+.stat-card,
+.skill-card,
+.project-card,
+.cert-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.skill-card:hover,
+.project-card:hover,
+.cert-card:hover {
+  border-color: rgba(124, 92, 252, 0.5);
+  transform: translateY(-4px);
+}
+
+.cert-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cert-thumb {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ---------- Stats ---------- */
+.stat-card {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.stat-num {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: #C084FC;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: #9CA3AF;
+}
+
+/* ---------- Projects ---------- */
+.project-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proj-link {
+  color: #9CA3AF;
+  transition: color 0.2s ease;
+}
+
+.proj-link:hover {
+  color: #7C5CFC;
+}
+
+/* ---------- Achievements ---------- */
+.achieve-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem;
+}
+
+.achieve-row p {
+  flex: 1;
+  text-align: left;
+  color: #D1D5DB;
+  font-size: 0.95rem;
+}
+
+/* ---------- Contact ---------- */
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #D1D5DB;
+  font-size: 0.9rem;
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.contact-btn:hover {
+  border-color: #7C5CFC;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
